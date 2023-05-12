@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<header>
+  
+</header>
+<body>
+  <div class="d-flex align-items-center flex-column mt-xl-5" id="primary-screen">
+    <section class="d-flex align-items-center justify-content-center">
+      <div class="frontImg">
+        <img src="./img/childrens.svg" width="600vw" />
+      </div>
+      <article class="frontArt w-50">
+        <h5>Bem-vindo ao nosso quiz sobre autismo! O objetivo deste quiz é ajudar a conscientizar as pessoas sobre o
+        autismo, um transtorno complexo que afeta muitas pessoas em todo o mundo. O autismo pode afetar indivíduos de
+        todas as idades e origens, e muitas vezes é difícil de ser compreendido ou diagnosticado. 
+        <br>Por isso, é importante
+        ter conhecimento sobre o assunto para ajudar a combater o estigma e a discriminação que muitas vezes estão
+        associados ao autismo.
+<br>
+        As perguntas deste quiz foram criadas para fornecer informações valiosas sobre o autismo de uma forma
+        interessante e interativa. 
+        <br>
+        Cada pergunta apresenta três alternativas, e você terá a oportunidade de selecionar a
+        resposta que acha correta. Após responder cada pergunta, você receberá imediatamente um feedback informando se a
+        sua resposta está correta ou não, e terá a chance de aprender mais sobre o assunto com uma breve explicação.</h5>
+      </article>
+    </section>
+    <div>
+      <button class="btn btn-primary" id="init-game">Iniciar o Game</button>
+    </div>
+  </div>
+
+  <div class="container-sm hidden" id="secondary-screen">
+    <div class="container text-center">
+      <h1>Quiz sobre autismo</h1>
+    </div>
+    <div class="card mt-4 p-3" id="quiz-container"></div>
+    <div class="">
+      <button class="btn btn-primary" id="check-answer">Verificar Resposta</button>
+      <button class="btn btn-primary" id="next-question" class="hidden">Próxima Questão</button>
+    </div>
+  </div>
+  <div class="container hidden" id="tertiary-screen"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./script.js"></script>
+  <footer></footer>
+</body>
+
+
+</html>

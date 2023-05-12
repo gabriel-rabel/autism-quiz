@@ -1,0 +1,42 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+    .hidden {
+      display: none !important;
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    header {
+      background-image: url("img/pieces.png");
+      width: 100vw;
+      height: 22vh;
+      background-repeat: repeat-x;
+    }
+
+    footer {
+      background-image: url("img/pieces-footer.png");
+      width: 100vw;
+      height: 22vh;
+      background-repeat: repeat-x;
+      align-items: end;
+      bottom: 0%;
+    }
+
+    h5 {
+      color: rgb(9, 9, 143);
+      text-align: justify;
+      font-weight: 400;
+    }
+
+    /*Modal*/
+
+    .swal2-styled.swal2-confirm {
+
+      background-color: #0d6efd !important;
+
+  }
