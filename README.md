@@ -19,7 +19,7 @@ Como Executar
 Para executar o Quiz para Autismo, basta clonar este repositório em seu ambiente local e abrir o arquivo index.html em seu navegador preferido. Certifique-se de ter uma conexão com a internet para que todos os recursos sejam carregados corretamente.
 
 Agradecimentos
-Agradeço à Ironhack por fornecer o conhecimento e o ambiente propício para o desenvolvimento deste projeto. Também sou grato a todos aqueles que contribuíram para a criação e aprimoramento do Quiz para Autismo. Um agradecimento especial ao meu filho, cuja jornada com o autismo tem sido minha principal motivação para desenvolver essa iniciativa e a Professora "Karen Okasaki" (https://github.com/karenokasaki) que com seu grande conhecimento e carisma tem me prestado todo suporte necessário para alcançar meus objetivos neste curso.
+Agradeço à Ironhack por fornecer o conhecimento e o ambiente propício para o desenvolvimento deste projeto. Também sou grato a todos aqueles que contribuíram para a criação e aprimoramento do Quiz para Autismo. Um agradecimento especial ao meu filho, cuja jornada com o autismo tem sido minha principal motivação para desenvolver essa iniciativa, também a Professora "Karen Okasaki" (https://github.com/karenokasaki), que com seu grande conhecimento e carisma tem me prestado todo suporte necessário para alcançar meus objetivos neste curso.
 
 Contato
 Se você tiver alguma dúvida, sugestão ou apenas quiser entrar em contato, sinta-se à vontade para me enviar uma mensagem através do meu perfil no GitHub. Estou sempre aberto a novas ideias e oportunidades de aprendizado.
