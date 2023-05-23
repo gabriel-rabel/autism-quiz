@@ -1,0 +1,40 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+    .hidden {
+      display: none !important;
+    }
+
+    footer {
+      background-image: url("img/autism-hand.png");
+      width: 100vw;
+      height: 20vh;
+      background-repeat: repeat-x;
+    }
+    h5 {
+      color: rgb(9, 9, 143);
+      text-align: justify;
+      font-weight: 400;
+    }
+
+    /*Modal*/
+
+    .swal2-styled.swal2-confirm {
+
+      background-color: #0d6efd !important;
+
+  }
+
+  #right-bottom-div {
+    background-image: image("");
+  }
+  #button-second-div {
+    min-height: 40vh;
+  }
+
+  main {
+    min-height: 60vh;
+
+  }

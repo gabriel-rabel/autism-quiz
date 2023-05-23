@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<header class="d-flex">
+  <img class="img-fluid" src="./img/logo-quiz.png" />
+</header>
+
+<body>
+  <main>
+    <section class="container d-flex justify-content-around" id="primary-screen">
+      <div class="row">
+        <div class="container-sm col-sm-6 d-flex">
+          <img class="img-fluid" src="./img/childrens.svg" width="600vw" />
+        </div>
+        <div class="col-sm-6 d-flex">
+          <div class="frontArt d-flex flex-column">
+            <p class="text-wrap">
+            <h1 class="text-primary">Bem-vindo!</h1> Este quiz tem o objetivo de conscientizar sobre o autismo, um transtorno complexo que
+            afeta pessoas no mundo todo. O autismo pode afetar pessoas de todas as idades e origens, sendo difícil de
+            compreender e diagnosticar. Ter conhecimento sobre o assunto é importante para combater o estigma e a
+            discriminação associados ao autismo. O quiz apresenta perguntas para fornecer informações valiosas sobre o
+            autismo de forma interessante e interativa. Cada pergunta possui três alternativas e você receberá feedback
+            imediato após responder, além de ter a chance de aprender mais sobre o assunto com uma breve explicação.
+            </p>
+            <button class="btn btn-primary" id="init-game">INICIAR O QUIZ</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="container-sm hidden gap-3" id="secondary-screen">
+      <div class="container text-center">
+      </div>
+      <div class="card mt-4 p-3" id="quiz-container"></div>
+      <div class="button-second-div mt-4">
+        <button class="btn btn-primary" id="check-answer">Verificar Resposta</button>
+        <button class="btn btn-primary" id="next-question" class="hidden">Próxima Questão</button>
+      </div>
+    </div>
+    <div class="container" id="tertiary-screen">
+      <div class="hidden alert alert-primary m-5" role="alert" id="answer-summary"></div>
+    </div>
+    <div class="hidden d-flex p-4 flex-wrap justify-content-around" id="quarterary-screen">
+      <div><a href="https://amanavegantes.com.br/"><img class="img-fluid" src="https://amanavegantes.com.br/wp-content/uploads/2021/08/Logo-AMA-Navegantes-site-retina-1.png"/></a></div>
+        <div><h5>Quer saber mais?</h5>
+        <p>Você demonstrou um ótimo interesse em aprender sobre o autismo! Se você gostaria de se aprofundar ainda mais
+          no assunto e obter informações adicionais, convidamos você a visitar o site da AMA Navegantes. Lá você
+          encontrará recursos, artigos e materiais educativos que podem ajudar a ampliar seu conhecimento sobre o
+          autismo. Acesse agora mesmo em: <a href="https://amanavegantes.com.br/">AMA Navegantes.</a></p>
+
+        <p class="fst-italic p-5">"Dedico este quiz ao meu filho, Arthur Gabriel, que é autista. Ele tem sido uma fonte constante de inspiração e aprendizado, e por meio da convivência com ele, aprendi muito sobre o autismo e sobre como podemos criar um mundo mais inclusivo e acolhedor para todas as pessoas, independentemente de suas diferenças."</p>
+
+          <p class="fw-lighter">Desenvolvido por Gabriel Rabel<a
+            href="https://github.com/gabriel-rabel"><img src="./img/github-icon.png" alt="Git hub de Gabriel Rabel">
+        </a><a href="https://www.linkedin.com/in/gabrielrabel"><img src="./img/linkedin-icon.png"
+                alt="Linkedin de Gabriel Rabel"></a></p>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./script.js"></script>
+  <footer></footer>
+</body>
+
+
+</html>
