@@ -38,3 +38,11 @@
     min-height: 60vh;
 
   }
+
+  .radio-button {
+    margin-right: 8px; 
+  }
+  
+  .answer-label {
+    margin-left: 4px; 
+  }

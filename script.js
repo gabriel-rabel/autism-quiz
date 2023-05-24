@@ -54,26 +54,28 @@ let currentQuestionIndex = 0;
 // Função para exibir a pergunta atual
 function displayQuestion() {
   const questionContainer = document.getElementById("quiz-container");
-  questionContainer.innerHTML = ""; //chama o container html
+  questionContainer.innerHTML = "";
 
   const questionElement = document.createElement("p");
   questionElement.textContent = questions[currentQuestionIndex].question;
   questionContainer.appendChild(questionElement);
 
   const answerContainer = document.createElement("div");
-  questionContainer.appendChild(answerContainer); //cria a div para questões
-  
+  questionContainer.appendChild(answerContainer);
+
   const answers = questions[currentQuestionIndex].answers;
   for (let i = 0; i < answers.length; i++) {
-    const answer = answers[i]; //exibe as pergunrtas em laço
+    const answer = answers[i];
     const radio = document.createElement("input");
     radio.type = "radio";
     radio.name = "answer";
     radio.value = i;
+    radio.classList.add("radio-button"); // Adiciona a classe "radio-button" ao botão de rádio
     answerContainer.appendChild(radio);
 
     const label = document.createElement("label");
     label.textContent = answer;
+    label.classList.add("answer-label"); // Adiciona a classe "answer-label" à etiqueta do texto
     answerContainer.appendChild(label);
 
     const lineBreak = document.createElement("br");
