@@ -1,4 +1,4 @@
-//inicia game
+//Game Init
 
 function removeInit() {
   const primaryScreen = document.getElementById("primary-screen");
@@ -37,21 +37,21 @@ const questions = [
   },
   {
     question: "Qual é o método de comunicação preferido para algumas pessoas com autismo?",
-    answers: ["Linguagem de sinais", "Comunicação aida por computadossistr", "Comunicação verbal"],
+    answers: ["Linguagem de sinais", "Comunicação assistida por computador", "Comunicação verbal"],
     correctAnswer: 1,
     id: 5,
   },
   {
-    question: "Qual é a diferença entre autismo de alto funcionamento e autismo de baixo funcionamento?",
-    answers: ["Nenhum, são os mesmos.", "Autismo de alto funcionamento é quando a pessoa tem um QI alto e boa habilidade de linguagem, enquanto o autismo de baixo funcionamento é quando a pessoa tem um QI baixo e dificuldade de linguagem.", "Autismo de alto funcionamento é quando a pessoa tem boa habilidade de linguagem, enquanto o autismo de baixo funcionamento é quando a pessoa tem dificuldade de linguagem e habilidades motoras limitadas."],
-    correctAnswer: 2,
+    question: "Qual é o papel da genética no autismo?",
+    answers: ["O autismo é causado exclusivamente por fatores genéticos.", "A genética pode desempenhar um papel importante no autismo, mas também há outros fatores envolvidos.", "O autismo não tem relação com fatores genéticos."],
+    correctAnswer: 1,
     id: 6,
   },
 ];
 
 let currentQuestionIndex = 0;
 
-// Função para exibir a pergunta atual
+// Show Question
 function displayQuestion() {
   const questionContainer = document.getElementById("quiz-container");
   questionContainer.innerHTML = "";
@@ -121,7 +121,7 @@ function checkAnswer() {
 
 }
 
-// Função para exibir o resumo da resposta
+// Show Resum
 function displayAnswerSummary(questionIndex, answerIndex) {
   const answerSummaryContainer = document.getElementById("answer-summary");
   const question = questions[questionIndex];
@@ -141,7 +141,7 @@ function displayAnswerSummary(questionIndex, answerIndex) {
   answerSummaryContainer.appendChild(summaryElement);
 }
 
-// Função para obter a explicação com base no ID da pergunta
+// Explanation
 function getExplanation(questionId) {
   switch (questionId) {
     case 0:
@@ -155,14 +155,14 @@ function getExplanation(questionId) {
     case 4:
       return "O método de comunicação preferido para algumas pessoas com autismo é a comunicação assistida por computador (CAC). A CAC envolve o uso de dispositivos eletrônicos, como tablets ou computadores, para auxiliar na comunicação. Esses dispositivos podem ter aplicativos ou softwares específicos que permitem que a pessoa com autismo se comunique por meio de texto, símbolos ou imagens.";
     case 5:
-      return "A diferença entre autismo de alto funcionamento e autismo de baixo funcionamento é que o autismo de alto funcionamento é quando a pessoa tem boa habilidade de linguagem, enquanto o autismo de baixo funcionamento é quando a pessoa tem dificuldade de linguagem e habilidades motoras limitadas. No entanto, é importante ressaltar que o funcionamento do indivíduo com autismo não se resume apenas à linguagem e habilidades motoras, e que o espectro autista abrange uma ampla variedade de características e desafios individuais.";
+      return "A genética desempenha um papel significativo no desenvolvimento do autismo. Estudos têm mostrado que há uma forte influência dos fatores genéticos na predisposição ao autismo. Pesquisas apontam que certas alterações genéticas podem aumentar o risco de uma pessoa desenvolver o transtorno. No entanto, é importante destacar que o autismo não é causado exclusivamente por fatores genéticos. Outros fatores, como influências ambientais e interações complexas entre genes e ambiente, também desempenham um papel no desenvolvimento do autismo.";
     default:
       return "";
   }
 }
 
 // new code
-// Função para avançar para a próxima pergunta
+// Next Question
 function nextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -190,7 +190,7 @@ function nextQuestion() {
   
 }
 
-// Adicionar eventos aos botões
+// Bottons
 const checkButton = document.getElementById("check-answer");
 checkButton.addEventListener("click", checkAnswer);
 
@@ -199,11 +199,11 @@ nextButton.addEventListener("click", nextQuestion);
 
 
 
-// Exibir a primeira pergunta
+// First Question
 displayQuestion();
 
 
-//Limpa resumo
+//Clean
 
 function clearAnswerSummary() {
   const answerSummaryContainer = document.getElementById("answer-summary");
@@ -213,7 +213,7 @@ function clearAnswerSummary() {
   answerSummaryContainer.classList.add("hidden");
 }
 
-//Fim de jogo
+//End Game
 function finishGame() {
   const questionContainer = document.getElementById("quiz-container");
   questionContainer.classList.add("hidden");
@@ -226,13 +226,3 @@ function finishGame() {
   quarteraryScreen.classList.remove("hidden");
 
 }
-
-//contador de acertos
-//sem uso por enquanto
-/*
-function hitCounter() {
-  if (hitCount < questions.length) {
-    console.log("Vc nao acertou todas as questoes");
-  }
-}
-*/

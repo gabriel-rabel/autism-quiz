@@ -1,48 +1,49 @@
+/*By Gabriel Rabel 
+  https://github.com/gabriel-rabel/autism-quiz.git
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none !important;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
-    .hidden {
-      display: none !important;
-    }
+footer {
+  background-image: url("./img/autism-hand.png");
+  height: 16vh;
+  background-repeat: repeat-x;
+}
 
-    footer {
-      background-image: url("img/autism-hand.png");
-      width: 100vw;
-      height: 20vh;
-      background-repeat: repeat-x;
-    }
-    h5 {
-      color: rgb(9, 9, 143);
-      text-align: justify;
-      font-weight: 400;
-    }
+h5 {
+  color: rgb(9, 9, 143);
+  text-align: justify;
+  font-weight: 400;
+}
 
-    /*Modal*/
+/*Modal*/
 
-    .swal2-styled.swal2-confirm {
+.swal2-styled.swal2-confirm {
+  background-color: #0d6efd !important;
+}
 
-      background-color: #0d6efd !important;
+#right-bottom-div {
+  background-image: image("");
+}
+#button-second-div {
+  min-height: 40vh;
+}
+#ama-logo {
+  max-width: 20vw;
+}
+main {
+  min-height: 64vh;
+}
 
-  }
+.radio-button {
+  margin-right: 8px;
+}
 
-  #right-bottom-div {
-    background-image: image("");
-  }
-  #button-second-div {
-    min-height: 40vh;
-  }
-
-  main {
-    min-height: 60vh;
-
-  }
-
-  .radio-button {
-    margin-right: 8px; 
-  }
-  
-  .answer-label {
-    margin-left: 4px; 
-  }
+.answer-label {
+  margin-left: 4px;
+}
